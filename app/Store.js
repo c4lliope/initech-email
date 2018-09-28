@@ -8,6 +8,7 @@ class Store {
     require('../messages/01.md'),
     require('../messages/02.md'),
     require('../messages/03.md'),
+    require('../messages/lumbergh_birthday.md'),
     require('../messages/04.md'),
     require('../messages/05.md'),
     require('../messages/06.md'),

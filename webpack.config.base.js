@@ -45,7 +45,11 @@ export default {
             cacheDirectory: true
           }
         }
-      }
+      },
+      {
+        test: /\.md$/,
+        loaders: ['json-loader', 'front-matter-loader'],
+      },
     ]
   },
 

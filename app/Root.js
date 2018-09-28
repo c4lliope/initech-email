@@ -13,8 +13,8 @@ const Root = ({ store }) => (
       <Avatar/>
     </Right>
 
-    <Sidebar>Sidebar</Sidebar>
-    <Main>Main</Main>
+    <Sidebar store={store}>Sidebar</Sidebar>
+    <Main store={store}>Main</Main>
   </Layout>
 )
 

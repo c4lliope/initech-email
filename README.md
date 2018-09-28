@@ -7,7 +7,7 @@
 <br>
 
 <p align="center">
-A boilerplate for Scalable Cross-Platform Desktop Apps based on  <a href="http://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/reactjs/redux">Redux</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="http://webpack.github.io/docs/">Webpack</a> and <a href="https://github.com/gaearon/react-transform-hmr">React Transform HMR</a> for rapid application development.
+A boilerplate for Scalable Cross-Platform Desktop Apps based on  <a href="http://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, <a href="https://github.com/reactjs/react-router">React Router</a>, <a href="http://webpack.github.io/docs/">Webpack</a> and <a href="https://github.com/gaearon/react-transform-hmr">React Transform HMR</a> for rapid application development.
 </p>
 
 <div align="center">
@@ -23,7 +23,6 @@ A boilerplate for Scalable Cross-Platform Desktop Apps based on  <a href="http:/
 
 <a href="https://facebook.github.io/react/"><img src="./internals/img/react-padded-90.png" /></a>
 <a href="https://webpack.github.io/"><img src="./internals/img/webpack-padded-90.png" /></a>
-<a href="http://redux.js.org/"><img src="./internals/img/redux-padded-90.png" /></a>
 <a href="https://github.com/ReactTraining/react-router"><img src="./internals/img/react-router-padded-90.png" /></a>
 <a href="https://flowtype.org/"><img src="./internals/img/flow-padded-90.png" /></a>
 <a href="http://eslint.org/"><img src="./internals/img/eslint-padded-90.png" /></a>
@@ -151,7 +150,7 @@ This boilerplate uses a [two package.json structure](https://github.com/electron
 **Rule of thumb** is: all modules go into `./package.json` except native modules, or modules with native dependencies or peer dependencies. Native modules, or packages with native dependencies should go into `./app/package.json`.
 
 1. If the module is native to a platform (like node-postgres), it should be listed under `dependencies` in `./app/package.json`
-2. If a module is `import`ed by another module, include it in `dependencies` in `./package.json`. See [this ESLint rule](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md). Examples of such modules are `material-ui`, `redux-form`, and `moment`.
+2. If a module is `import`ed by another module, include it in `dependencies` in `./package.json`. See [this ESLint rule](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md). Examples of such modules are `material-ui`, and `moment`.
 3. Otherwise, modules used for building, testing and debugging should be included in `devDependencies` in `./package.json`.
 
 ### Further Readings
@@ -186,10 +185,6 @@ import './app.global.scss';
 ## Static Type Checking
 
 This project comes with Flow support out of the box! You can annotate your code with types, [get Flow errors as ESLint errors](https://github.com/amilajack/eslint-plugin-flowtype-errors), and get [type errors during runtime](https://github.com/codemix/flow-runtime) during development. Types are completely optional.
-
-## Dispatching redux actions from main process
-
-See [#118](https://github.com/chentsulin/electron-react-boilerplate/issues/118) and [#108](https://github.com/chentsulin/electron-react-boilerplate/issues/108)
 
 ## How to keep your project updated with the boilerplate
 

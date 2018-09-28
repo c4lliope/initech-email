@@ -13,6 +13,7 @@ const Sidebar = observer(({ store }) => (
 
 const Layout = styled.div`
   border-right: 1px solid grey;
+  overflow-y: scroll;
 `
 
 export default Sidebar

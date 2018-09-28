@@ -1,7 +1,9 @@
-class Store {
-  user = "Peter Gabriel"
+import { observable, action, computed } from "mobx"
 
-  messages = [
+class Store {
+  @observable user = "Peter Gabriel"
+
+  @observable messages = [
     require('../messages/01.md'),
     // require('../messages/02.md'),
     // require('../messages/03.md'),
@@ -24,14 +26,14 @@ class Store {
     // require('../messages/20.md'),
   ]
 
-  selectedMessageIndex = 0
+  @observable selectedMessageIndex = 0
 
-  // @action
+  @action
   selectMessage(index) {
     this.selectedMessageIndex = index
   }
 
-  // @computed
+  @computed
   get selectedMessage() {
    return this.messages[this.selectedMessageIndex]
   }

@@ -3,8 +3,9 @@ import styled from "styled-components"
 import Sidebar from "./Sidebar"
 import Main from "./Main"
 import { UserIcon } from "mdi-react"
+import { observer } from "mobx-react"
 
-const Root = ({ store }) => (
+const Root = observer(({ store }) => (
   <Layout>
     <Title>Initech Email</Title>
 
@@ -16,7 +17,7 @@ const Root = ({ store }) => (
     <Sidebar store={store}>Sidebar</Sidebar>
     <Main store={store}>Main</Main>
   </Layout>
-)
+))
 
 const Layout = styled.div`
   display: grid;

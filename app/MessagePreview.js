@@ -1,13 +1,14 @@
 import React from "react"
 import styled from "styled-components"
+import { observer } from "mobx-react"
 
-const Message = ({ attributes, body, onClick }) => (
+const Message = observer(({ attributes, body, onClick }) => (
   <Layout onClick={onClick}>
     <div>From: {attributes.from}</div>
     <div>To: {attributes.to}</div>
     <div>{body}</div>
   </Layout>
-)
+))
 
 const Layout = styled.div`
   border: 1px solid grey;

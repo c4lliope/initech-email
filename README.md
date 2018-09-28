@@ -1,10 +1,12 @@
 # Initech Email
 
 * git clone
-* yarn
+* `yarn`
 * `yarn dev` to develop
 * `messages/` folder, then `app/Store.js` to add messages
 * `yarn package-all` to build standalone apps
+* For other commands, see the `scripts` section in `package.json`
+* UI components are all under `app/*.js`
 
 Constraints:
 
